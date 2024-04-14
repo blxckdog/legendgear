@@ -1,0 +1,33 @@
+{ 
+	"replace": false,
+	"values": [ 
+		"minecraft:short_grass",
+		"minecraft:fern",
+		"minecraft:dead_bush",
+		"minecraft:dandelion",
+		"minecraft:poppy",
+		"minecraft:blue_orchid",
+		"minecraft:allium",
+		"minecraft:azure_bluet",
+		"minecraft:red_tulip",
+		"minecraft:orange_tulip",
+		"minecraft:white_tulip",
+		"minecraft:pink_tulip",
+		"minecraft:oxeye_daisy",
+		"minecraft:brown_mushroom",
+		"minecraft:red_mushroom",
+		"minecraft:sunflower",
+		"minecraft:lilac",
+		"minecraft:rose_bush",
+		"minecraft:peony",
+		"minecraft:tall_grass",
+		"minecraft:large_fern",
+		"minecraft:cornflower",
+		"minecraft:lily_of_the_valley",
+		"minecraft:crimson_fungus",
+		"minecraft:warped_fungus",
+		"minecraft:crimson_roots",
+		"minecraft:warped_roots",
+		"legendgear:mystic_shrub"
+	]
+}

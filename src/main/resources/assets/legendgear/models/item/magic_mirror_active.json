@@ -1,0 +1,13 @@
+{
+	"parent": "legendgear:item/magic_mirror",
+	"textures": {
+		"layer0": "legendgear:item/magic_mirror_active"
+	},
+	"display": { 
+		"firstperson_righthand": { 
+			"rotation": [ 0, -10, 110],
+			"translation": [ -5.12, 3.2, 1.12],
+			"scale": [ 0.67, 0.67, 0.67]
+		}
+	}
+}

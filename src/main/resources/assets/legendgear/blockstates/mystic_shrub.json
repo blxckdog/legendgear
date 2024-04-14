@@ -1,0 +1,28 @@
+{ 
+	"variants": { 
+		"age=0": { 
+			"model": "legendgear:block/mystic_shrub_cut"
+		},
+		"age=1": { 
+			"model": "legendgear:block/mystic_shrub_plain"
+		},
+		"age=2": { 
+			"model": "legendgear:block/mystic_shrub_plain"
+		},
+		"age=3": { 
+			"model": "legendgear:block/mystic_shrub_plain"
+		},
+		"age=4": { 
+			"model": "legendgear:block/mystic_shrub_plain"
+		},
+		"age=5": { 
+			"model": "legendgear:block/mystic_shrub_plain"
+		},
+		"age=6": { 
+			"model": "legendgear:block/mystic_shrub_plain"
+		},
+		"age=7": { 
+			"model": "legendgear:block/mystic_shrub_plain"
+		}
+	}
+}

@@ -1,0 +1,92 @@
+{
+	"boomerang": { 
+		"subtitle": "subtitles.legendgear.boomerang",
+		"sounds": [ 
+			"legendgear:boomerang"
+		]
+	},
+	"sword_take": { 
+		"subtitle": "subtitles.legendgear.sword_take",
+		"sounds": [ 
+			"legendgear:sword_take"
+		]
+	},
+	"sword_place": { 
+		"subtitle": "subtitles.legendgear.sword_place",
+		"sounds": [ 
+			"legendgear:sword_place"
+		]
+	},
+	"titan_lift": { 
+		"subtitle": "subtitles.legendgear.titan_lift",
+		"sounds": [ 
+			"legendgear:titan_lift"
+		]
+	},
+	"titan_throw": { 
+		"subtitle": "subtitles.legendgear.titan_throw",
+		"sounds": [ 
+			"legendgear:titan_throw"
+		]
+	},
+	"sine": { 
+		"subtitle": "subtitles.legendgear.sine",
+		"sounds": [ 
+			"legendgear:sine"
+		]
+	},
+	"money_small": { 
+		"subtitle": "subtitles.legendgear.money_small",
+		"sounds": [ 
+			"legendgear:money_small"
+		]
+	},
+	"money_mid": { 
+		"subtitle": "subtitles.legendgear.money_mid",
+		"sounds": [ 
+			"legendgear:money_mid"
+		]
+	},
+	"money_big": { 
+		"subtitle": "subtitles.legendgear.money_big",
+		"sounds": [ 
+			"legendgear:money_big"
+		]
+	},
+	"heart": { 
+		"subtitle": "subtitles.legendgear.heart",
+		"sounds": [ 
+			"legendgear:heart"
+		]
+	},
+	"starfall": { 
+		"subtitle": "subtitles.legendgear.starfall",
+		"sounds": [ 
+			"legendgear:starfall"
+		]
+	},
+	"star_caught": { 
+		"subtitle": "subtitles.legendgear.star_caught",
+		"sounds": [ 
+			"legendgear:star_caught"
+		]
+	},
+	"star_twinkle": { 
+		"subtitle": "subtitles.legendgear.star_twinkle",
+		"sounds": [ 
+			"legendgear:star_twinkle"
+		]
+	},
+	"flute_attack": { 
+		"subtitle": "subtitles.legendgear.flute_attack",
+		"sounds": [ 
+			"legendgear:flute_attack"
+		]
+	},
+	"flute_sustain": { 
+		"subtitle": "subtitles.legendgear.flute_sustain",
+		"sounds": [ 
+			"legendgear:flute_sustain"
+		]
+	}
+}

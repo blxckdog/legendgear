@@ -1,0 +1,20 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "legendgear:item/magic_mirror"
+	},
+	"overrides": [ 
+		{ 
+			"predicate": { 
+				"legendgear:dim": 1
+			},
+			"model": "legendgear:item/magic_mirror_dim"
+		},
+		{ 
+			"predicate": { 
+				"legendgear:active": 1
+			},
+			"model": "legendgear:item/magic_mirror_active"
+		}
+	]
+}

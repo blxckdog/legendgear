@@ -1,0 +1,14 @@
+{
+	"parent": "minecraft:item/handheld",
+	"textures": {
+		"layer0": "legendgear:item/hookshot"
+	},
+	"overrides": [ 
+		{ 
+			"predicate": { 
+				"legendgear:fired": 1
+			},
+			"model": "legendgear:item/hookshot_fired"
+		}
+	]
+}

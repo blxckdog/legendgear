@@ -1,0 +1,6 @@
+{
+	"parent": "legendgear:item/hookshot",
+	"textures": {
+		"layer0": "legendgear:item/hookshot_fired"
+	}
+}

@@ -1,0 +1,6 @@
+{
+	"parent": "legendgear:item/magic_mirror",
+	"textures": {
+		"layer0": "legendgear:item/magic_mirror_dim"
+	}
+}

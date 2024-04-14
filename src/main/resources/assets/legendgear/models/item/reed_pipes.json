@@ -1,0 +1,13 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "legendgear:item/reed_pipes"
+	},
+	"display": { 
+		"firstperson_righthand": { 
+			"rotation": [ 0, -10, 20],
+			"translation": [ -5.12, 3.2, 1.12],
+			"scale": [ 0.67, 0.67, 0.67]
+		}
+	}
+}
