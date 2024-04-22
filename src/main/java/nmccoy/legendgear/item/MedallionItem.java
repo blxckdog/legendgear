@@ -1,6 +1,6 @@
-package nmccoy.legendgear.item.medallion;
+package nmccoy.legendgear.item;
 
-import java.util.function.Supplier;
+import java.util.function.Function;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
@@ -15,15 +15,15 @@ import net.minecraft.world.World;
 
 import nmccoy.legendgear.entity.medallion.ThrownMedallionEntity;
 
-public abstract class AbstractMedallionItem extends Item {
+public class MedallionItem extends Item {
 
 	public static final int MAX_DAMAGE = 51;
 	public static final int THROW_TIME = 15;
 	
-	private final Supplier<ThrownMedallionEntity> thrownMedallionSupplier;
+	private final Function<World, ThrownMedallionEntity> thrownMedallionSupplier;
 	
 	
-	public AbstractMedallionItem(Settings settings, Supplier<ThrownMedallionEntity> thrownMedallionSupplier) {
+	public MedallionItem(Settings settings, Function<World, ThrownMedallionEntity> thrownMedallionSupplier) {
 		super(settings.maxDamage(MAX_DAMAGE));
 		this.thrownMedallionSupplier = thrownMedallionSupplier;
 	}
@@ -64,12 +64,12 @@ public abstract class AbstractMedallionItem extends Item {
 		world.playSound(null, user.getBlockPos(), SoundEvents.ENTITY_ARROW_SHOOT, SoundCategory.HOSTILE, 0.5f, 0.7f);
 		
 		if(!world.isClient) {
-			ThrownMedallionEntity thrownMedallion = thrownMedallionSupplier.get();
+			ThrownMedallionEntity thrownMedallion = thrownMedallionSupplier.apply(world);
 			
 			thrownMedallion.setOwner(user);
 			thrownMedallion.setItem(stack);
 			thrownMedallion.setPosition(user.getEyePos());
-			thrownMedallion.setVelocity(user, user.getPitch(), user.getYaw(), 0.0F, 1.5F, 1.0F);
+			thrownMedallion.setVelocity(user, user.getPitch(), user.getYaw(), 0f, 1.2f, 0.8f);
 			
 			world.spawnEntity(thrownMedallion);
 		}

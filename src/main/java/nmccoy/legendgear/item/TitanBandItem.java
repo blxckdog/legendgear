@@ -85,10 +85,10 @@ public class TitanBandItem extends Item {
 	@Override
 	public ActionResult useOnEntity(ItemStack stack, PlayerEntity user, LivingEntity entity, Hand hand) {
 		ItemStack activeStack = user.getStackInHand(hand);
-		/*
+		
 		if(!activeStack.isOf(LegendGear.TITAN_BAND)) {
 			return ActionResult.PASS;
-		}*/
+		}
 		
 		if(!user.hasPassengers()) {
 			if(!user.getWorld().isClient) {

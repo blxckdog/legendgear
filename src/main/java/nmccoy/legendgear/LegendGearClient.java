@@ -80,7 +80,7 @@ public class LegendGearClient implements ClientModInitializer {
 			return new MagicBoomerangEntityRenderer(context);
 		});
 		
-		EntityRendererRegistry.register(LegendGear.THROWN_MEDALLION_ENTITY, (context) -> {
+		EntityRendererRegistry.register(LegendGear.THROWN_EARTH_MEDALLION_ENTITY, (context) -> {
 			return new FlyingItemEntityRenderer<>(context, 1.4f, false);
 		});
 		

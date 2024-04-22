@@ -8,7 +8,7 @@ import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
-
+import nmccoy.legendgear.entity.medallion.EarthMedallionEntity;
 import nmccoy.legendgear.entity.medallion.ThrownMedallionEntity;
 
 public interface LegendGearEntities {
@@ -21,10 +21,10 @@ public interface LegendGearEntities {
 					.build()
 			);
 	
-	EntityType<ThrownMedallionEntity> THROWN_MEDALLION_ENTITY = Registry.register(
+	EntityType<EarthMedallionEntity> THROWN_EARTH_MEDALLION_ENTITY = Registry.register(
 			Registries.ENTITY_TYPE, 
-			id("thrown_medallion"),
-			FabricEntityTypeBuilder.create(SpawnGroup.MISC, ThrownMedallionEntity::new)
+			id("earth_medallion"),
+			FabricEntityTypeBuilder.create(SpawnGroup.MISC, EarthMedallionEntity::new)
 					.dimensions(EntityDimensions.fixed(.6f, .6f))
 					.build()
 			);

@@ -10,10 +10,9 @@ import nmccoy.legendgear.LegendGear;
 public class FireMedallionItem extends AbstractMedallionItem {
 
 	public FireMedallionItem(Settings settings) {
-		super(settings);
+		super(settings, null);
 	}
 
-	@Override
 	public void onImpact(World world, Vec3d pos) {
 		if(world.isClient) {
 			world.addParticle(LegendGear.MAGIC_RUNE, pos.getX(), pos.getY(), pos.getZ(), 0.5f, 1f, 0.5f);

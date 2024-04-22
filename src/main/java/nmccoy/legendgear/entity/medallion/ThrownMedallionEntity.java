@@ -2,39 +2,45 @@ package nmccoy.legendgear.entity.medallion;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.projectile.thrown.ThrownItemEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.hit.BlockHitResult;
 import net.minecraft.world.World;
 
-import nmccoy.legendgear.LegendGear;
-import nmccoy.legendgear.item.medallion.AbstractMedallionItem;
+public abstract class ThrownMedallionEntity extends ThrownItemEntity {
 
-public class ThrownMedallionEntity extends ThrownItemEntity {
-
+	protected boolean isActive = false;
+	protected int activeAge = -1;
+	
 	public ThrownMedallionEntity(EntityType<? extends ThrownItemEntity> entityType, World world) {
 		super(entityType, world);
 	}
 	
 	@Override
-	protected void onBlockHit(BlockHitResult blockHitResult) {
-		super.onBlockHit(blockHitResult);
-		Item item = getStack().getItem();
+	public void tick() {
+		super.tick();
 		
-		if(item instanceof AbstractMedallionItem) {
-			((AbstractMedallionItem) item).onImpact(getWorld(), blockHitResult.getPos());
+		if(isActive) {
+			activeTick();
 		}
 		
-		remove(RemovalReason.DISCARDED);
-	}
-
-	@Override
-	protected Item getDefaultItem() {
-		return LegendGear.EARTH_MEDALLION;
+		if(age > 20*120) {
+			discard();
+		}
 	}
 	
-	public void setStack(ItemStack medallionStack) {
-		setItem(medallionStack);
+	@Override
+	protected void onBlockHit(BlockHitResult blockHitResult) {
+		super.onBlockHit(blockHitResult);
+		setItem(ItemStack.EMPTY);
+		setVelocity(0, 0, 0);
+		
+		if(!isActive) {
+			isActive = true;
+			activeAge = age;
+		}
 	}
+	
+	
+	protected abstract void activeTick();
 
 }

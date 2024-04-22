@@ -18,11 +18,11 @@ import net.minecraft.sound.SoundCategory;
 import net.minecraft.util.ActionResult;
 
 import nmccoy.legendgear.LegendGear;
+import nmccoy.legendgear.entity.medallion.EarthMedallionEntity;
 import nmccoy.legendgear.event.PlayerEntityEvents;
 import nmccoy.legendgear.item.amulet.AeroAmuletItem;
 import nmccoy.legendgear.item.amulet.GeoAmuletItem;
 import nmccoy.legendgear.item.amulet.PyroAmuletItem;
-import nmccoy.legendgear.item.medallion.EarthMedallionItem;
 import nmccoy.legendgear.item.medallion.EnderMedallionItem;
 import nmccoy.legendgear.item.medallion.FireMedallionItem;
 import nmccoy.legendgear.item.medallion.WindMedallionItem;
@@ -33,7 +33,7 @@ public interface LegendGearItems {
 	Item AERO_AMULET = new AeroAmuletItem(notStackable());
 	Item GEO_AMULET = new GeoAmuletItem(notStackable());
 	Item PYRO_AMULET = new PyroAmuletItem(notStackable());
-	Item EARTH_MEDALLION = new EarthMedallionItem(notStackable());
+	Item EARTH_MEDALLION = new MedallionItem(notStackable(), EarthMedallionEntity::create);
 	Item ENDER_MEDALLION = new EnderMedallionItem(notStackable());
 	Item WIND_MEDALLION = new WindMedallionItem(notStackable());
 	Item FIRE_MEDALLION = new FireMedallionItem(notStackable());
